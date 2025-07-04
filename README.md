@@ -11,6 +11,9 @@ develop the python code to list file in AWS S3
 develop the python code to download file to local folder data 
 Download git
 create an ssh key- ssh-keygen
-pasted ssh key and cloned the github repo to the clocal
+pasted ssh key and cloned the github repo to the local
+creae a repo in github
+pull the repo
+push the changes code to repo
 
 

@@ -1,2 +1,7 @@
 boto3
 awscli
+elasticsearch
+fastapi
+pytesseract
+pymupdf
+pandas
