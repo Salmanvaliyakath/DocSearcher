@@ -1,6 +1,6 @@
-from s3_client import S3Client
-from extractor_factory import get_extractor
-from postgres_client import PostgresClient
+from infrastructure.cloud.s3_client import S3Client
+from infrastructure.index.postgress_client import PostgresClient
+from utils.extractor_factory import get_extractor
 
 
 BUCKET_NAME = "docs-search-bucket"

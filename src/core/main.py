@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Query
-from postgress_client import PostgresClient
+from src.infrastructure.index.postgress_client import PostgresClient
 
 app = FastAPI()
 db = PostgresClient()
