@@ -15,5 +15,11 @@ pasted ssh key and cloned the github repo to the local
 creae a repo in github
 pull the repo
 push the changes code to repo
+Downloaded and Install the postgresql - https://www.enterprisedb.com/postgresql-tutorial-resources-training-1?uuid=140fdf8e-34e6-4b1b-ac32-532e5ac826c4&campaignId=Product_Trial_PostgreSQL_14
+create a database docsearch in postgress
+download and install tessseract, add path to system
+
+
+
 
 

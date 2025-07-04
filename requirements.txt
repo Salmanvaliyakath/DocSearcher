@@ -1,7 +1,8 @@
 boto3
 awscli
-elasticsearch
 fastapi
 pytesseract
 pymupdf
 pandas
+psycopg2-binary
+uvicorn
