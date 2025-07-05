@@ -27,3 +27,12 @@ class PostgresClient:
         with self.conn.cursor(cursor_factory=RealDictCursor) as cur:
             cur.execute("SELECT file_name FROM documents WHERE content ILIKE %s", ('%' + query + '%',))
             return cur.fetchall()
+        
+    def list_file_name(self):
+        with self.conn.cursor() as cur:
+            cur.execute("SELECT file_name from documents;")
+            response = cur.fetchall()
+            return [file[0] for file in response]
+    
+
+    

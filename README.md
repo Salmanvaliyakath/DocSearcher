@@ -21,5 +21,11 @@ download and install tessseract, add path to system
 
 
 
+uvicorn src.core.main:app --reload
+
+python src/main_pipeline.py
+
+
+
 
 
