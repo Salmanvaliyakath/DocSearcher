@@ -72,9 +72,9 @@
 ├── requirements.txt
 
 
----
+```
 
-## 🛠️ Setup & Running Locally
+### . 🛠️ Setup & Running Locally
 
 ### 1. Clone the repo
 
@@ -110,7 +110,7 @@ Ensure PostgreSQL is running with:
 ### 5. Run document indexing
 
 ```bash
-python src/run_indexing.py
+python src/main_pipeline.py
 ```
 
 ### 6. Start FastAPI server
@@ -120,7 +120,7 @@ uvicorn src.main:app --reload
 ```
 
 Visit API docs at:  
-📎 [`http://localhost:8000/docs`](http://localhost:8000/docs)
+📎 [`http://localhost:8000/search`](http://localhost:8000/search)
 
 ---
 
@@ -129,7 +129,7 @@ Visit API docs at:
 ### ➕ Indexing Documents
 
 ```bash
-python src/run_indmain_pipline.py
+python src/main_pipline.py
 ```
 
 > Downloads files from S3 → Extracts content → Indexes into PostgreSQL.
@@ -161,7 +161,3 @@ GET /search?key=your key word
 
 
 ---
-
-## 📬 Contact
-
-For questions or collaboration opportunities, please reach out via [valiyakathsalman@gmail.com](mailto:your-email@example.com)
