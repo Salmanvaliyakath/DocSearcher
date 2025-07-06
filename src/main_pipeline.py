@@ -29,6 +29,8 @@ def run_indexing():
     # Identify files that exist in S3 but not in the database
     files_to_be_index = [file for file in s3_files if file not in files_in_db]
 
+    print(f'Number of files to be ingested : {len(files_to_be_index)}')
+
     for key in files_to_be_index:
 
         # Download the file from S3 to the local directory
@@ -41,6 +43,9 @@ def run_indexing():
         if extractor:
             content = extractor.extract_text(local_path)
             db.index_file(key, content)
+            print(f'{key} indexed')
+
+    print('Dnoe!')
 
 # Entry point
 if __name__ == "__main__":

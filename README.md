@@ -116,7 +116,7 @@ python src/main_pipeline.py
 ### 6. Start FastAPI server
 
 ```bash
-uvicorn src.main:app --reload
+uvicorn src.core.main:app --reload
 ```
 
 Visit API docs at:  

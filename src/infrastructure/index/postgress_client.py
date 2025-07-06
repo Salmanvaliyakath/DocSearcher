@@ -1,8 +1,17 @@
 import psycopg2
 from psycopg2.extras import RealDictCursor
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 class PostgresClient:
-    def __init__(self, db_name='docsearch', user='postgres', password='admin', host='localhost', port='5432'):
+    def __init__(self, 
+                 db_name=os.getenv("POSTGRES_DB"), 
+                 user=os.getenv("POSTGRES_USER"), 
+                 password=os.getenv("POSTGRES_PASSWORD"), 
+                 host=os.getenv("POSTGRES_HOST"), 
+                 port=os.getenv("POSTGRES_PORT")):
 
         """
         Initialize the PostgreSQL connection and create the documents table if it doesn't exist.

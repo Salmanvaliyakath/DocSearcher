@@ -4,5 +4,6 @@ fastapi
 pytesseract
 pymupdf
 pandas
+python-dotenv
 psycopg2-binary
 uvicorn
